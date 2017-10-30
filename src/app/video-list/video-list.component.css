@@ -1,0 +1,9 @@
+.video-list-wrapper{
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rbga(0,0,0,.4)
+}
+.video-list-wrapper a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}

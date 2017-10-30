@@ -1,0 +1,7 @@
+<h1>Photos List</h1>
+<p>Get list photos from <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a></p>
+<div class="photo-wrapper">
+  <div *ngFor="let item of photoList">
+    <img src="{{item.url}}" alt="ng v4">
+  </div>
+</div>

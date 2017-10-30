@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+}
+
+/*override navbar border radius */
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.navbar-red{
+  background-color: #c53d30;
+  border-color: #c53d30;
+}
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-nav>li>a{
+  color: #fff;
+}
+.nav>li>a:focus,
+.nav>li>a:hover{
+  background-color: #df4632 !important;
+}
+.nav .open>a,
+.navbar-nav >li>.dropdown-menu{
+  background-color: #c53d30 !important;
+  color: #fff !important;
+}
+.dropdown-menu>li>a{
+  color: #fff !important;
+}
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover{
+  background-color: #df4632 !important;
+  color: #fff !important;
+}
+.navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+
+
+footer{
+  background: #df4632;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+footer p{
+  margin-bottom: 0;
+}

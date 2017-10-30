@@ -1,0 +1,20 @@
+.photo-wrapper{
+  max-width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-wrapper > div{
+  margin: 10px;
+}
+
+img{
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
