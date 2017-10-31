@@ -3,7 +3,7 @@ import { NgModule }             from '@angular/core';
 import { FormsModule }          from '@angular/forms';
 import { HttpModule }           from '@angular/http';
 
-//third party imports
+// third party imports
 import { BsDropdownModule }     from 'ngx-bootstrap/dropdown';
 import { ModalModule }          from 'ngx-bootstrap/modal';
 

@@ -6,20 +6,20 @@ import { ActivatedRoute }                  from '@angular/router';
   styleUrls: ['./search-result.component.css']
 })
 export class SearchResultComponent implements OnInit {
-  private routeSub: any
-  query: string
+  private routeSub: any;
+  query: string;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe( params => {
-      this.query = params['q']
-      console.log(this.query)
-    })
+      this.query = params['q'];
+      console.log(this.query);
+    });
   }
 
   ngOnDestroy() {
-    this.routeSub.unsubscribe()
+    this.routeSub.unsubscribe();
   }
 
 }

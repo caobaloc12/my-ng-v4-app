@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  description = 'One framework. Mobile & desktop.'
+  description = 'One framework. Mobile & desktop.';
+  appPassMsg = 'This message passes to search component!';
 }

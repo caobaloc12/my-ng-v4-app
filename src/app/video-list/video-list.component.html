@@ -5,11 +5,11 @@
 <p>{{currentTime | date:"short"}}</p>
 
 <div *ngFor='let item of videoList' class="video-list-wrapper">
-  <a href="videos/{{ item.slug }}" *ngIf='item.slug !== ""'>{{item.name}}</a>
+  <a routerLink="videos/{{ item.slug }}" routerLinkActive="active">{{item.name}}</a>
   <!-- <a href="videos/{{ item.slug }}" *ngIf='item.slug === ""' style="color: red">{{item.name}}</a> -->
 
-  <div class="" style="position:relative;height:0;padding-bottom:56.25%" *ngIf='item.embed'>
-    <iframe [src]="getEmbedUrl(item) | safeEmbed" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+  <div class="video-embed" *ngIf='item.embed'>
+    <iframe [src]="getEmbedUrl(item) | safeEmbed" width="640" height="360" frameborder="0" allowfullscreen></iframe>
   </div>
 
 </div>
